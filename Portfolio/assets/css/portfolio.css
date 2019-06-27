@@ -1,0 +1,459 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+
+html, body, div, span, applet, object,
+iframe, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+
+body, input, select, textarea {
+	background: #1D2123;
+/* 	background: -moz-linear-gradient(0deg, rgba(30,30,30,1) 0%, rgba(70,70,70,1) 50%, rgba(30,30,30,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(30,30,30,1) 0%, rgba(70,70,70,1) 50%, rgba(30,30,30,1) 100%);
+	background: linear-gradient(0deg, rgba(30,30,30,1) 0%, rgba(70,70,70,1) 50%, rgba(30,30,30,1) 100%); */
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.65;
+}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #ffa800;
+		font-weight: 600;
+		line-height: 1.5;
+		margin: 1rem 0 1rem 0;
+		text-transform: uppercase;
+		letter-spacing: 0.2rem;
+	}
+
+
+img.thumb {
+	border-radius: 4px;
+	width: 220px;
+	height: 220px;
+}
+
+.container {
+  position: relative;
+  word-wrap: break-word;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        max-width: 720px
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        max-width: 960px
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px
+    }
+}
+
+
+/* Buttons */
+.btn {
+    min-width: 7.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+}
+.btn-md {
+/*   font-weight: 500;
+  letter-spacing: 1px;
+  margin: .4rem .8rem !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem 3rem;
+  border-radius: 3px; */
+}
+.btn-primary-outline,
+.btn-primary-outline:active {
+  background: none;
+  border-color: #ffa800;
+  color: #ffffff;
+}
+.btn-primary-outline:hover,
+.btn-primary-outline:focus,
+.btn-primary-outline.focus,
+.btn-primary-outline.active {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.075);;
+  border-color: #ffa800;
+  box-shadow: none;
+}
+a,
+a:hover {
+  color: #ffa800;
+}
+ul,
+ol,
+pre,
+blockquote {
+  margin-bottom: 2.3125rem;
+}
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+html,
+body {
+  height: auto;
+  min-height: 100vh;
+}
+.cid-rupVuNLNsx {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.cid-rupVuNLNsx .mbr-slider .carousel-control {
+  background: #1b1b1b;
+}
+.cid-rupVuNLNsx .mbr-slider .carousel-control-prev {
+  left: 0;
+  margin-left: 2.5rem;
+}
+.cid-rupVuNLNsx .mbr-slider .carousel-control-next {
+  right: 0;
+  margin-right: 2.5rem;
+}
+.cid-rupVuNLNsx .mbr-slider .modal-body .close {
+  background: #1b1b1b;
+}
+.cid-rupVuNLNsx .mbr-gallery-item > div::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #c1c1c1;
+  opacity: 0;
+  -webkit-transition: 0.2s opacity ease-in-out;
+  transition: 0.2s opacity ease-in-out;
+  border-radius: 4px;
+}
+.cid-rupVuNLNsx .mbr-gallery-item > div:hover .mbr-gallery-title::before {
+  background: transparent !important;
+}
+.cid-rupVuNLNsx .mbr-gallery-item > div:hover:before {
+  opacity: 0.7 !important;
+}
+.cid-rupVuNLNsx .mbr-gallery-title {
+  font-size: .9em;
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 0;
+  padding: 1rem;
+  color: #fff;
+  z-index: 2;
+}
+.cid-rupVuNLNsx .mbr-gallery-title:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  background: #c1c1c1 !important;
+  opacity: 0.7;
+  -webkit-transition: 0.2s background ease-in-out;
+  transition: 0.2s background ease-in-out;
+}
+
+
+.back {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 4rem;
+	height: 4rem;
+	cursor: pointer;
+	text-indent: 4rem;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+	.back:before {
+		-moz-transition: background-color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out;
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0.75rem;
+		width: 2.5rem;
+		height: 2.5rem;
+		border-radius: 100%;
+		background-position: center;
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
+		background-size: 20px 20px;
+		background-repeat: no-repeat;
+	}
+
+	.back:hover:before {
+		background-color: rgba(255, 255, 255, 0.075);
+	}
+
+	.back:active:before {
+		background-color: rgba(255, 255, 255, 0.175);
+	}
+	
+
+/* 		.portfolio {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+ 		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		max-width: 100%;
+		text-align: center;
+	} */
+	.protnav {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		margin-bottom: 25px;
+	}
+
+	.portfolio nav ul {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		margin-bottom: 0;
+		list-style: none;
+		padding-left: 0;
+		border: solid 1px #ffa800;
+		border-radius: 4px;
+	}
+
+		.portfolio nav ul li {
+			padding-left: 0;
+			border-left: solid 1px #ffa800;
+		}
+
+			.portfolio nav ul li:first-child {
+				border-left: 0;
+			}
+
+			.portfolio nav ul li a {
+				display: block;
+				min-width: 7.5rem;
+				height: 2.75rem;
+				line-height: 2.75rem;
+				/* padding: 0 1.25rem 0 1.45rem; */
+				text-transform: uppercase;
+				letter-spacing: 0.2rem;
+				font-size: 0.8rem;
+				border-bottom: 0;
+			}
+
+				.portfolio nav ul li a:hover {
+					background-color: rgba(255, 255, 255, 0.075);
+				}
+
+				.portfolio nav ul li a:active {
+					background-color: rgba(255, 255, 255, 0.175);
+				}
+
+	.portfolio nav.use-middle:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: calc(50% - 1px);
+		width: 1px;
+		height: 100%;
+		background: #ffa800;
+	}
+
+	.portfolio nav.use-middle ul li.is-middle {
+		border-left: 0;
+	}
+
+	.portfolio button.btn, .portfolio button.btn.active {
+		min-width: 5rem;
+		box-shadow: none;
+		font-family: inherit;
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.portfolio .content p br {
+			display: none;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.portfolio > * {
+			margin-top: 2rem;
+		}
+
+			.portfolio > *:before {
+				top: calc(-2rem - 1px);
+				height: calc(2rem + 1px);
+			}
+
+		.portfolio .logo {
+			width: 4.75rem;
+			height: 4.75rem;
+			line-height: 4.75rem;
+		}
+
+			.portfolio .logo .icon:before {
+				font-size: 1.75rem;
+			}
+
+		.portfolio .content .inner {
+			padding: 2.5rem 1rem;
+		}
+
+		.portfolio .content p {
+			line-height: 1.875;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		.portfolio {
+			padding: 1.5rem 0;
+		}
+
+			.portfolio .content .inner {
+				padding: 2.5rem 0;
+			}
+
+			.portfolio nav ul {
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				min-width: 10rem;
+				max-width: 100%;
+			}
+
+				.portfolio nav ul li {
+					border-left: 0;
+					border-top: solid 1px #ffffff;
+				}
+
+					.portfolio nav ul li:first-child {
+						border-top: 0;
+					}
+
+					.portfolio nav ul li a {
+						height: 3rem;
+						line-height: 3rem;
+						min-width: 0;
+						width: 100%;
+					}
+
+			.portfolio nav.use-middle:after {
+				display: none;
+			}
+
+	}
+
+
+	.portfolio .row {
+	  margin: 10px -16px;
+	  display: -ms-flexbox; /* IE10 */
+	  display: flex;
+	  -ms-flex-wrap: wrap; /* IE10 */
+	  flex-wrap: wrap;
+	  padding: 0 4px;
+	}
+
+	/* Add padding BETWEEN each column */
+	.portfolio .row,
+	.portfolio .row > .portfolio .column {
+	  padding: 8px;
+	}
+
+	/* Create three equal columns that floats next to each other */
+	.portfolio .column {
+	  float: left;
+	  display: none; /* Hide all elements by default */
+	  -ms-flex: 15%; /* IE10 */
+	  flex: 15%;
+	}
+
+	/* Clear floats after rows */ 
+	.portfolio .row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* The "show" class is added to the filtered elements */
+	.portfolio  .show {
+	  display: block;
+	}
+	
+	/* Responsive layout - makes a two column-layout instead of four columns */
+	@media screen and (max-width: 800px) {
+	  .column {
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	  }
+	}
+
+	/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 600px) {
+	  .column {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	  }
+	}
